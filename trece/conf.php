@@ -8,7 +8,7 @@ return [
     "flavour"   =>  "mini",  # http://mini.trece.io/
     "version"   =>  "0.14.50",  # http://mini.trece.io/changelog
     "motto"     =>  "A humbler start", # In other words: "Nailing perfection" ;-)
-    "theme"     =>  $theme="minimal",
+    "theme"     =>  $theme="brunneis",
   ],
 
 
@@ -81,23 +81,23 @@ return [
   "meta"                =>  [
 # --------------------------------------------------------------------
     "name"              =>  [
-                   "en" =>  "Site name",
-                   "es" =>  "Nombre del sitio web",
-                  "gal" =>  "Nome do sitio web",
+                   "en" =>  "Brunneis' Blog",
+                   "es" =>  "Brunneis Blog",
+                  "gal" =>  "Brunneis Blog",
                             ],
     "title"             =>  [
-                   "en" =>  "Site title",
-                   "es" =>  "Título del sitio web",
-                  "gal" =>  "Título do sitio web",
+                   "en" =>  "Brunneis' Blog",
+                   "es" =>  "Brunneis Blog",
+                  "gal" =>  "Brunneis Blog",
                             ],
     "description"       =>  [
-                   "en" =>  "Description for my website",
-                   "es" =>  "Descripción de mi sitio web",
-                  "gal" =>  "Descripción do meu sitio web",
+                   "en" =>  "The Brunneis' Blog",
+                   "es" =>  "El blog de Brunneis",
+                  "gal" =>  "O blogue de Brunneis",
                             ],
-    "keywords"          =>  "word, another word, three more words, etc",
+    "keywords"          =>  "blockchain, big data, information retrieval, artificial intelligence, ai, machine learning, stream processing, real time, crawler",
     "image"             =>  [
-                 "file" =>  "https://mini.trece.io/img/og/trece.jpg",
+                 "file" =>  "https://blog.brunneis.com/img/og/brunneis.jpg",
           "description" =>  [
                    "en" =>  "Image description",
                    "es" =>  "Descripción de la imagen",
@@ -118,12 +118,12 @@ return [
               "gal" => "Rexión (País)",
                         ],
     "phone_no"      =>  "+xx xxxxxxxxx",
-    "email"         =>  "email@domain.com",
-    "twitter"       =>  "@yourtwitterusername",
+    "email"         =>  "rodrigo@martinez.gal",
+    "twitter"       =>  "@brunn3is",
     "instagram"     =>  "@yourinstagramusername",
     "facebook"      =>  "@yourfacebookusername",
     "fb_app_id"     =>  "123456789012345",  # Get yours at https://developers.facebook.com/apps
-    "disqus"        =>  "@yourdisqususername",
+    "disqus"        =>  "@brunneis",
     "geo"           =>  [
            "region" =>  "xx",         # Georegion http://geo-tag.de/generator
          "latitude" =>  "00.000000",  # Geoposition (latitude) http://geo-tag.de/generator
