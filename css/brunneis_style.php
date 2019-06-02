@@ -314,6 +314,7 @@ article a:link, #footer a:visited, #footer a:hover, #footer a:active {
 
 article h1 {
   padding-bottom: 20px;
+  line-height: 1.5em;
 }
 
 article p, article li, article th, article td {

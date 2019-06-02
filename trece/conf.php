@@ -55,8 +55,6 @@ return [
     "viewport"          =>  "width=device-width, initial-scale=1", # Ref: https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag
     "generator"         =>  "Your favourite code editor",  # Ref: https://creativebloq.com/advice/5-top-code-editors-for-programmers
     "robots"            =>  "index, follow", # Ref: https://www.searchenginejournal.com/best-practices-setting-meta-robots-tags-robots-txt/
-    "langs"             =>  "en en-US|es es-ES",  # Order matters. First language is the main language
-                                                            # Examples: en en-US|es es-ES|gal gl-ES|ar ar-MA rtl|zh zh-CN ttb
     "markdown"          =>  true,  # Use or not the Markdown syntax
     "homepage"          =>  $homepage="markdown-sample",
     "homepage_redirect" =>  "",
