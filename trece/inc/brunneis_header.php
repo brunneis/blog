@@ -126,16 +126,16 @@
     <div id="author_box">
       <div id="author_description">
         <div id="author_avatar"><img src="https://pbs.twimg.com/profile_images/1135254456705212418/axHu92n6_400x400.png" /></div>
-        <h1>Rodrigo Martínez</h1>
+        <h1>Rodrigo Martínez Castaño</h1>
         <h2>Blockchain • Big Data • Information Retrieval</h2>
         <p>
         Blockchain Architect and Co-founder of Blockchain.gal<br>
         Big Data & Information Retrieval PhD Student
         </p>
         <p>
-        <a href="https://twitter.com/brunn3is"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/brunneis"><i class="fab fa-linkedin"></i></a>
-        <a href="https://scholar.google.es/citations?user=LDGO-2EAAAAJ"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://twitter.com/brunn3is" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/brunneis" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://scholar.google.es/citations?user=LDGO-2EAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i></a>
         </p>
       </div>
     </div>
