@@ -38,6 +38,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
     line-height: 1;
+    background: #fff;
 }
 
 ol, ul {
@@ -197,34 +198,34 @@ header{
 #header div.languages {
   display: inline-block;
   font-family: 'Open Sans';
-  color: white;
+  color: #fff;
 }
 #header div.brand img{height:20px;}
 #header div.brand a,
 #header div.languages a {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 #header div.languages {
   margin-left: auto;
   font-family: 'Open Sans';
   font-weight: 400;
   font-size: 0.8em;
-  color: white;
+  color: #fff;
 }
 #header div.languages a:link,
 #header p a:visited,
 #header p a:hover,
 #header p a:active {
   text-decoration: none;
-  color: white;
+  color: #fff;
   padding-bottom: .1em;
 }
 #header div.languages a:hover {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #fff;
 }
 #header div.languages a.active {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #fff;
 }
 #header aside.social-links {
   position: fixed;
@@ -255,32 +256,34 @@ header{
     top: 0;
     margin: auto;
     padding-top: 110px;
-    color: white;
+    color: #fff;
+    line-height: 1.6;
     font-family: 'Open Sans';
 }
 
 #author_description h1 {
     font-size: 1.7em;
     font-weight: bold;
+    margin-right: 125px;
 }
 
 #author_description h2 {
     margin-top: 0.6em;
     font-size: 0.8em;
+    margin-right: 125px;
     color: #BFD4FF;
 }
 
 #author_description p {
     font-size: 1.1em;
     margin-top: 1.5em;
-    margin-right: 100px;
-    line-height: 1.6;
+    margin-right: 125px;
 }
 
 #author_description a:link, #author_description a:visited, #author_description a:hover, #author_description a:active {
     text-decoration: none;
     margin-right: 0.5em;
-    color: white;
+    color: #fff;
 }
 
 #author_avatar {
@@ -296,16 +299,75 @@ header{
     border-radius: 50%;
 }
 
+.article-card {
+    margin-top: 25px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,.09);
+    box-shadow: 0 1px 4px rgba(0,0,0,.04);
+    line-height: 1.5em;
+}
+
+.article-card time {
+    font-family: 'Open Sans';
+    font-size: 0.9em;
+    color: rgba(0,0,0,.54);
+}
+
+.article-card p {
+    font-family: 'Open Sans';
+    font-size: 1em;
+    color: rgba(0,0,0,.54);
+    margin-top: 20px;
+    padding-bottom: 0;
+}
+
+.article-card h1 {
+    padding-top: 10px;
+    font-family: 'Open Sans';
+    font-size: 1.7em;
+    line-height: 1.3em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.article-card h2 {
+    font-family: 'Open Sans';
+    font-size: 1.3em;
+    font-weight: normal;
+    color: rgba(0,0,0,.54);
+    margin: 0; 
+}
+
+.article-card a:link {
+    text-decoration: none;
+}
+
 nav{}
 
-.white-background {
-  width: 100%;
-  background: white;
-  /* padding-bottom: 5em; */
+pre { 
+    overflow-x: scroll;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 15px;
+    color: #aaa;
+    background-color: #222;
+    white-space: pre;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,.09);
+    box-shadow: 0 1px 4px rgba(0,0,0,.04);
+    font-family: monospace;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+em {
+    font-style: italic;
 }
 
 article{
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 article a:link, #footer a:visited, #footer a:hover, #footer a:active {
@@ -419,6 +481,7 @@ article ul {
 
 footer {
     padding: 2em 0;
+    background: #fafafa;
 }
 
 #footer {
@@ -462,7 +525,7 @@ footer {
 
 /* vertical smartphones */
 
-@media screen and (min-width:360px) and (max-width:752px) {
+@media screen and (max-width:752px) {
     article {
         padding-bottom: 40px;
     }

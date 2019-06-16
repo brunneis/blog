@@ -76,56 +76,65 @@
     href="<?=REALPATH.$conf["dir"]["styles"].$conf["trece"]["theme"];?>_style.php">
   <?=isset($customCSS)?$customCSS:"";?>
 
+
+  <!-- https://cdnjs.com/libraries/github-markdown-css -->
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css"
+          integrity="sha256-Ndk1ry+oGNFEaXt4kxlW/SYLbxat1O0DhaDd+lob0SY="
+          crossorigin="anonymous"
+  />
+
 </head>
+
+
 
 <?php $logo = "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiID8+DQo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPg0KPHN2ZyB3aWR0aD0iNTAwcHQiIGhlaWdodD0iNzBwdCIgdmlld0JveD0iMCAwIDUwMCA3MCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPg0KPGcgaWQ9IiNmZmZmZmZmZiI+DQo8cGF0aCBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIxLjAwIiBkPSIgTSAwLjAwIDAuMDAgTCAxMC4wMCAwLjAwIEMgMTAuMDAgNi42NyAxMC4wMCAxMy4zMyAxMC4wMCAyMC4wMCBDIDI2LjY3IDIwLjAwIDQzLjMzIDIwLjAwIDYwLjAwIDIwLjAwIEMgNjAuMDAgMzYuNjcgNjAuMDAgNTMuMzMgNjAuMDAgNzAuMDAgTCAwLjAwIDcwLjAwIEwgMC4wMCAwLjAwIE0gMTAuMDAgMzAuMDAgQyAxMC4wMCA0MC4wMCAxMC4wMCA1MC4wMCAxMC4wMCA2MC4wMCBDIDIzLjMzIDYwLjAwIDM2LjY3IDYwLjAwIDUwLjAwIDYwLjAwIEMgNTAuMDAgNTAuMDAgNTAuMDAgNDAuMDAgNTAuMDAgMzAuMDAgQyAzNi42NyAzMC4wMCAyMy4zMyAzMC4wMCAxMC4wMCAzMC4wMCBaIiAvPg0KPHBhdGggZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMS4wMCIgZD0iIE0gNzAuMDAgMjAuMDAgQyA5MC4wMCAyMC4wMCAxMTAuMDAgMjAuMDAgMTMwLjAwIDIwLjAwIEMgMTMwLjAwIDIyLjUwIDEzMC4wMCAyNy41MCAxMzAuMDAgMzAuMDAgQyAxMTMuMzMgMzAuMDAgOTYuNjcgMzAuMDAgODAuMDAgMzAuMDAgQyA4MC4wMCA0My4zMyA4MC4wMCA1Ni42NyA4MC4wMCA3MC4wMCBMIDcwLjAwIDcwLjAwIEMgNzAuMDAgNTMuMzMgNzAuMDAgMzYuNjcgNzAuMDAgMjAuMDAgWiIgLz4NCjxwYXRoIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjEuMDAiIGQ9IiBNIDE0MC4wMCAyMC4wMCBDIDE0Mi41MCAyMC4wMCAxNDcuNTAgMjAuMDAgMTUwLjAwIDIwLjAwIEMgMTUwLjAwIDMzLjMzIDE1MC4wMCA0Ni42NyAxNTAuMDAgNjAuMDAgQyAxNjMuMzMgNjAuMDAgMTc2LjY2IDYwLjAwIDE5MC4wMCA2MC4wMCBDIDE5MC4wMCA0Ni42NyAxOTAuMDAgMzMuMzMgMTkwLjAwIDIwLjAwIEMgMTkyLjUwIDIwLjAwIDE5Ny41MCAyMC4wMCAyMDAuMDAgMjAuMDAgQyAyMDAuMDAgMzYuNjcgMjAwLjAwIDUzLjMzIDIwMC4wMCA3MC4wMCBMIDE0MC4wMCA3MC4wMCBDIDE0MC4wMCA1My4zMyAxNDAuMDAgMzYuNjcgMTQwLjAwIDIwLjAwIFoiIC8+DQo8cGF0aCBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIxLjAwIiBkPSIgTSAyMTAuMDAgMjAuMDAgQyAyMzAuMDAgMjAuMDAgMjUwLjAwIDIwLjAwIDI3MC4wMCAyMC4wMCBDIDI3MC4wMCAzNi42NyAyNzAuMDAgNTMuMzMgMjcwLjAwIDcwLjAwIEwgMjYwLjAwIDcwLjAwIEMgMjYwLjAwIDU2LjY3IDI2MC4wMCA0My4zMyAyNjAuMDAgMzAuMDAgQyAyNDYuNjYgMzAuMDAgMjMzLjMzIDMwLjAwIDIyMC4wMCAzMC4wMCBDIDIyMC4wMCA0My4zMyAyMjAuMDAgNTYuNjcgMjIwLjAwIDcwLjAwIEwgMjEwLjAwIDcwLjAwIEMgMjEwLjAwIDUzLjMzIDIxMC4wMCAzNi42NyAyMTAuMDAgMjAuMDAgWiIgLz4NCjxwYXRoIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjEuMDAiIGQ9IiBNIDI4MC4wMCAyMC4wMCBDIDMwMC4wMCAyMC4wMCAzMjAuMDAgMjAuMDAgMzQwLjAwIDIwLjAwIEMgMzQwLjAwIDM2LjY3IDM0MC4wMCA1My4zMyAzNDAuMDAgNzAuMDAgTCAzMzAuMDAgNzAuMDAgQyAzMzAuMDAgNTYuNjcgMzMwLjAwIDQzLjMzIDMzMC4wMCAzMC4wMCBDIDMxNi42NiAzMC4wMCAzMDMuMzMgMzAuMDAgMjkwLjAwIDMwLjAwIEMgMjkwLjAwIDQzLjMzIDI5MC4wMCA1Ni42NyAyOTAuMDAgNzAuMDAgTCAyODAuMDAgNzAuMDAgQyAyODAuMDAgNTMuMzMgMjgwLjAwIDM2LjY3IDI4MC4wMCAyMC4wMCBaIiAvPg0KPHBhdGggZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMS4wMCIgZD0iIE0gMzUwLjAwIDIwLjAwIEMgMzcwLjMzIDIwLjAwIDM5MC42NiAyMC4wMCA0MTEuMDAgMjAuMDAgQyA0MTEuMDAgMzAuMDAgNDExLjAwIDQwLjAwIDQxMS4wMCA1MC4wMCBDIDM5NC4wMCA1MC4wMCAzNzcuMDAgNTAuMDAgMzYwLjAwIDUwLjAwIEMgMzYwLjAwIDUyLjUwIDM2MC4wMCA1Ny41MCAzNjAuMDAgNjAuMDAgQyAzNzcuMDAgNjAuMDAgMzk0LjAwIDYwLjAwIDQxMS4wMCA2MC4wMCBDIDQxMS4wMSA2My4zMyA0MTAuOTcgNjYuNjYgNDExLjAwIDcwLjAwIEwgMzUwLjAwIDcwLjAwIEMgMzUwLjAwIDUzLjMzIDM1MC4wMCAzNi42NyAzNTAuMDAgMjAuMDAgTSAzNjAuMDAgMzAuMDAgQyAzNjAuMDAgMzIuNTAgMzYwLjAwIDM3LjUwIDM2MC4wMCA0MC4wMCBDIDM3My4zMyA0MC4wMCAzODYuNjYgNDAuMDAgNDAwLjAwIDQwLjAwIEMgNDAwLjAwIDM3LjUwIDQwMC4wMCAzMi41MCA0MDAuMDAgMzAuMDAgQyAzODYuNjYgMzAuMDAgMzczLjMzIDMwLjAwIDM2MC4wMCAzMC4wMCBaIiAvPg0KPHBhdGggZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMS4wMCIgZD0iIE0gNDIwLjAwIDIwLjAwIEMgNDIyLjc1IDIwLjAwIDQyOC4yNSAyMC4wMCA0MzEuMDAgMjAuMDAgQyA0MzEuMDAgMzYuNjcgNDMxLjAwIDUzLjMzIDQzMS4wMCA3MC4wMCBMIDQyMC4wMCA3MC4wMCBDIDQyMC4wMCA1My4zMyA0MjAuMDAgMzYuNjcgNDIwLjAwIDIwLjAwIFoiIC8+DQo8cGF0aCBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIxLjAwIiBkPSIgTSA0NDAuMDAgMjAuMDAgQyA0NjAuMDAgMjAuMDAgNDgwLjAwIDIwLjAwIDUwMC4wMCAyMC4wMCBMIDUwMC4wMCAzMC4wMCBDIDQ4My4zMyAzMC4wMCA0NjYuNjYgMzAuMDAgNDUwLjAwIDMwLjAwIEMgNDUwLjAwIDMyLjUwIDQ1MC4wMCAzNy41MCA0NTAuMDAgNDAuMDAgQyA0NjYuNjYgNDAuMDAgNDgzLjMzIDQwLjAwIDUwMC4wMCA0MC4wMCBMIDUwMC4wMCA3MC4wMCBMIDQ0MC4wMCA3MC4wMCBDIDQ0MC4wMSA2Ni42NyA0MzkuOTcgNjMuMzMgNDQwLjAwIDYwLjAwIEMgNDU2LjY2IDYwLjAwIDQ3My4zMyA2MC4wMCA0OTAuMDAgNjAuMDAgQyA0OTAuMDAgNTcuNTAgNDkwLjAwIDUyLjUwIDQ5MC4wMCA1MC4wMCBDIDQ3My4zMyA1MC4wMCA0NTYuNjYgNTAuMDAgNDQwLjAwIDUwLjAwIEMgNDM5Ljk5IDQwLjAwIDQzOS45OSAzMC4wMCA0NDAuMDAgMjAuMDAgWiIgLz4NCjwvZz4NCjwvc3ZnPg0K"; ?>
 
 <body>
 
-  <div class="white-background">
+  <header>
 
-    <header>
+    <div id="header">
 
-      <div id="header">
-
-        <div class="brand">
-          <a href="<?=$conf["site"]["realpathLang"];?>">
-            <?php /*Blogue*/ ?>
-            <img src="data:image/svg+xml;base64,<?=$logo;?>" alt="<?=$conf["site"]["title"][$conf["site"]["lang"]];?>"
-              class="img-responsive">
-          </a>
-        </div>
-
-        <?php if(count($conf["site"]["langs"])>1) : ?>
-        <div class="languages">
-          <?php $i=1; foreach($conf["site"]["langs"] as $language) : ?>
-          <a href="<?=$conf["site"]["realpath"].$language["url-name"];?>"
-            <?=$language["ref-name"]==LANG?" class=\"active\"":"";?>><?=strtoupper($language["ref-name"]);?></a><?=$i<count($conf["site"]["langs"])?"":"";?>
-          <?php $i++;?>
-          <?php endforeach; ?>
-        </div>
-        <?php endif; ?>
-
-        <aside class="social-links">
-          <ul>
-            <li><a title="Comment with Disqus" href="<?=$conf["site"]["fullpath"];?>#disqus_thread"><i
-                  class="far fa-comment"></i></a></li>
-            <li><a title="Share on Twitter"
-                href="https://twitter.com/share?url=<?=$conf["site"]["fullpath"];?>&text=<?=$conf["meta"]["title"][LANG];?>. <?=$conf["meta"]["description"][LANG];?> (<?=$conf["contact"]["twitter"];?>)"
-                target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a title="Share on Facebook"
-                href="https://www.facebook.com/sharer/sharer.php?u=<?=$conf["site"]["fullpath"];?>" target="_blank"><i
-                  class="fab fa-facebook"></i></a></li>
-            <ul>
-        </aside>
-
+      <div class="brand">
+        <a href="<?=$conf["site"]["realpathLang"];?>">
+          <?php /*Blogue*/ ?>
+          <img src="data:image/svg+xml;base64,<?=$logo;?>" alt="<?=$conf["site"]["title"][$conf["site"]["lang"]];?>"
+            class="img-responsive">
+        </a>
       </div>
 
-    </header>
+      <?php if(count($conf["site"]["langs"])>1) : ?>
+      <div class="languages">
+        <?php $i=1; foreach($conf["site"]["langs"] as $language) : ?>
+        <a href="<?=$conf["site"]["realpath"].$language["url-name"];?>"
+          <?=$language["ref-name"]==LANG?" class=\"active\"":"";?>><?=strtoupper($language["ref-name"]);?></a><?=$i<count($conf["site"]["langs"])?"":"";?>
+        <?php $i++;?>
+        <?php endforeach; ?>
+      </div>
+      <?php endif; ?>
+
+      <aside class="social-links">
+        <ul>
+          <li><a title="Comment with Disqus" href="<?=$conf["site"]["fullpath"];?>#disqus_thread"><i
+                class="far fa-comment"></i></a></li>
+          <li><a title="Share on Twitter"
+              href="https://twitter.com/share?url=<?=$conf["site"]["fullpath"];?>&text=<?=$conf["meta"]["title"][LANG];?>. <?=$conf["meta"]["description"][LANG];?> (<?=$conf["contact"]["twitter"];?>)"
+              target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a title="Share on Facebook"
+              href="https://www.facebook.com/sharer/sharer.php?u=<?=$conf["site"]["fullpath"];?>" target="_blank"><i
+                class="fab fa-facebook"></i></a></li>
+          <ul>
+      </aside>
+
+    </div>
+
+  </header>
 
     <div id="author_box">
       <div id="author_description">
-        <div id="author_avatar"><img src="https://pbs.twimg.com/profile_images/1135254456705212418/axHu92n6_400x400.png" /></div>
+        <div id="author_avatar"><img src="https://pbs.twimg.com/profile_images/1137405163319255043/KNxqCEWR_400x400.png" /></div>
         <h1>Rodrigo Martínez Castaño</h1>
         <h2>Blockchain • Big Data • Information Retrieval</h2>
         <p>
@@ -139,8 +148,6 @@
         </p>
       </div>
     </div>
-
-  </div>
 
   <nav>
   </nav>
