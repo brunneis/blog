@@ -374,8 +374,14 @@ em {
     font-style: italic;
 }
 
-article{
+article {
     margin: 0 auto;
+}
+
+img.cover {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
 }
 
 article a:link, #footer a:visited, #footer a:hover, #footer a:active {
