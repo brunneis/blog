@@ -1,7 +1,7 @@
 <?php
-  require 'brunneis_header.php';
+  include 'brunneis_header.php';
   include 'generate_latest_posts.php';
-  require './trece/inc/blog/latest_posts.html';
+  include './trece/inc/blog/latest_posts.html';
 ?>
 
 </article>

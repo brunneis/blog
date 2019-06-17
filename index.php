@@ -462,7 +462,7 @@
           if(isset($conf["meta"]["temp"]["image_file"])) : $conf["meta"]["image"]["file"]  = $conf["meta"]["temp"]["image_file"];  unset($conf["meta"]["image_file"]); endif;
           if(isset($conf["meta"]["temp"]["datetime"]))   :
                                                            $conf["meta"]["datetime"] = $conf["meta"]["temp"]["datetime"];
-                                                           define("DATE",date('Y-m-d', strtotime(str_replace('-', '/', $conf["meta"]["datetime"]))));
+                                                           define("DATE",date('Y/m/d', strtotime(str_replace('-', '/', $conf["meta"]["datetime"]))));
           endif;
 
           unset($conf["meta"]["temp"]);
@@ -493,7 +493,7 @@
 
           endif;
 
-          if($metadt) : $page = str_replace("[[DATE]]",DATE,$page); endif;
+          if($metadt) : $page = str_replace("[[DATE]]","<time datetime='".$conf["meta"]["datetime"]."'>".DATE."</time>",$page); endif;
 
           $markdownStuff = new ParsedownExtraPlugin();
           $markdownStuff->code_block_attr_on_parent = true;

@@ -58,7 +58,7 @@ return [
     "langs"             =>  "es es-ES",  # Order matters. First language is the main language
                                          # Examples: en en-US|es es-ES|gal gl-ES|ar ar-MA rtl|zh zh-CN ttb
     "markdown"          =>  true,  # Use or not the Markdown syntax
-    "homepage"          =>  $homepage="home",
+    "homepage"          =>  $homepage="brunneis_home",
     "homepage_redirect" =>  "",
     "sections"          =>  [
                  "demo" =>  [

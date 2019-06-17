@@ -309,7 +309,7 @@ header{
     line-height: 1.5em;
 }
 
-.article-card time {
+article > p > time, .article-card time {
     font-family: 'Open Sans';
     font-size: 0.9em;
     color: rgba(0,0,0,.54);
@@ -323,21 +323,28 @@ header{
     padding-bottom: 0;
 }
 
-.article-card h1 {
-    padding-top: 10px;
+.posts-list h1, .article-card h1 {
     font-family: 'Open Sans';
     font-size: 1.7em;
     line-height: 1.3em;
     font-weight: bold;
+}
+.posts-list h1 {
+    margin: 40px 0 0 0;
+}
+.article-card h1 {
+    padding-top: 10px;
     margin: 0;
 }
 
-.article-card h2 {
+.posts-list h2, .article-card h2 {
     font-family: 'Open Sans';
     font-size: 1.3em;
     font-weight: normal;
     color: rgba(0,0,0,.54);
-    margin: 0; 
+    margin: 0;
+}
+.article-card h2 {
 }
 
 .article-card a:link {
