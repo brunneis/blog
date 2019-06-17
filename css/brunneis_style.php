@@ -348,6 +348,7 @@ nav{}
 
 pre { 
     overflow-x: scroll;
+    overflow: auto;
     margin-top: 25px;
     margin-bottom: 25px;
     padding: 15px;
