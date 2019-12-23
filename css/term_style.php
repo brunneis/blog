@@ -38,7 +38,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
     line-height: 1;
-    background: #fff;
+    background: #28272a;
 }
 
 ol, ul {
@@ -59,113 +59,31 @@ table {
     border-spacing: 0;
 }
 
-/* Title */
-@font-face {
-  font-family: 'Adamina';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Adamina Regular'), local('Adamina-Regular'), url(https://fonts.gstatic.com/s/adamina/v12/j8_r6-DH1bjoc-dwi-3UEBt7Fns.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
 
-/* Main content */
-/* cyrillic-ext */
-@font-face { 
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v13/0QIvMX1D_JOuMwf7I_FMl_GW8g.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
+/* Hack */
 @font-face {
-  font-family: 'Lora';
-  font-style: normal;
+  font-family: 'Hack';
+  src: url('fonts/hack-regular-subset.woff2?sha=3114f1256') format('woff2'), url('fonts/hack-regular-subset.woff?sha=3114f1256') format('woff');
   font-weight: 400;
-  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v13/0QIvMX1D_JOuMw77I_FMl_GW8g.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  font-style: normal;
 }
-/* vietnamese */
 @font-face {
-  font-family: 'Lora';
+  font-family: 'Hack';
+  src: url('fonts/hack-bold-subset.woff2?sha=3114f1256') format('woff2'), url('fonts/hack-bold-subset.woff?sha=3114f1256') format('woff');
+  font-weight: 700;
   font-style: normal;
-  font-weight: 400;
-  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v13/0QIvMX1D_JOuMwX7I_FMl_GW8g.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
 }
-/* latin-ext */
 @font-face {
-  font-family: 'Lora';
-  font-style: normal;
+  font-family: 'Hack';
+  src: url('fonts/hack-italic-subset.woff2?sha=3114f1256') format('woff2'), url('fonts/hack-italic-webfont.woff?sha=3114f1256') format('woff');
   font-weight: 400;
-  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v13/0QIvMX1D_JOuMwT7I_FMl_GW8g.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-style: italic;
 }
-/* latin */
 @font-face {
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v13/0QIvMX1D_JOuMwr7I_FMl_E.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* Subtitles, footers */
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFWJ0bf8pkAp6a.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFUZ0bf8pkAp6a.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFWZ0bf8pkAp6a.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVp0bf8pkAp6a.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFWp0bf8pkAp6a.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFW50bf8pkAp6a.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-family: 'Hack';
+  src: url('fonts/hack-bolditalic-subset.woff2?sha=3114f1256') format('woff2'), url('fonts/hack-bolditalic-subset.woff?sha=3114f1256') format('woff');
+  font-weight: 700;
+  font-style: italic;
 }
 
 html{position:relative;min-height:100%;background:#fafafa;}
@@ -176,8 +94,7 @@ header{
   height: 65px;
   position: fixed;
   top: 0;
-  background: #2c56dd;
-  opacity: .98;
+  background: #161616;
   box-shadow: 0 0px 6px 6px #00000024;
   z-index: 1;
 }
@@ -197,7 +114,7 @@ header{
 #header div.brand, 
 #header div.languages {
   display: inline-block;
-  font-family: 'Open Sans';
+  font-family: 'Hack';
   color: #fff;
 }
 #header div.brand img{height:20px;}
@@ -208,7 +125,7 @@ header{
 }
 #header div.languages {
   margin-left: auto;
-  font-family: 'Open Sans';
+  font-family: 'Hack';
   font-weight: 400;
   font-size: 0.8em;
   color: #fff;
@@ -240,7 +157,7 @@ header{
 #header aside.social-links a:hover,
 #header aside.social-links a:active {
   text-decoration: none;
-  color: #2c56dd;
+  color: #f45d22;
 }
 #header aside ul li {
   padding-bottom: 22px;
@@ -249,41 +166,42 @@ header{
 #author-box {
     width: 100%;
     padding-bottom: 50px;
-    background: #2c56dd;
+    background: #1c1c1c;
 }
 
 #author-description {
     top: 0;
     margin: auto;
     padding-top: 110px;
-    color: #fff;
     line-height: 1.6;
-    font-family: 'Open Sans';
+    font-family: 'Hack';
 }
 
 #author-description h1 {
     font-size: 1.7em;
     font-weight: bold;
     margin-right: 125px;
+    color: #ffffff;
 }
 
 #author-description h2 {
     margin-top: 0.6em;
     font-size: 0.8em;
     margin-right: 125px;
-    color: #BFD4FF;
+    color: #aaaaaa;
 }
 
 #author-description p {
     font-size: 1.1em;
     margin-top: 1.5em;
     margin-right: 125px;
+    color: #aaaaaa;
 }
 
 #author-description a:link, #author-description a:visited, #author-description a:hover, #author-description a:active {
     text-decoration: none;
     margin-right: 0.5em;
-    color: #fff;
+    color: #aaaaaa;
 }
 
 #author-avatar {
@@ -291,40 +209,40 @@ header{
     width: 100px;
     position: relative;
     overflow: hidden;
+    border: 3px solid #f45d22;
+    border-radius: 50%;
 }
 
 #author-avatar img {
     display: block;
-    width: 100%; 
-    border-radius: 50%;
+    height: 100px;
 }
 
 .article-card {
     margin-top: 25px;
     padding: 25px;
-    background: #fff;
+    background: #1c1c1c;
     border-radius: 3px;
     border: 1px solid rgba(0,0,0,.09);
     box-shadow: 0 1px 4px rgba(0,0,0,.04);
     line-height: 1.5em;
+    color: #ffffff;
 }
 
-article > p > time, .article-card time {
-    font-family: 'Open Sans';
-    font-size: 0.9em;
-    color: rgba(0,0,0,.54);
+article > p > time, .article-card > time {
+    font-family: 'Hack';
+    font-size: 16px;
 }
 
 .article-card p {
-    font-family: 'Open Sans';
-    font-size: 1em;
-    color: rgba(0,0,0,.54);
+    font-family: 'Hack';
+    font-size: 16px;
     margin-top: 20px;
     padding-bottom: 0;
 }
 
 .posts-list h1, .article-card h1 {
-    font-family: 'Open Sans';
+    font-family: 'Hack';
     font-size: 1.7em;
     line-height: 1.3em;
     font-weight: bold;
@@ -338,13 +256,10 @@ article > p > time, .article-card time {
 }
 
 .posts-list h2, .article-card h2 {
-    font-family: 'Open Sans';
-    font-size: 1.3em;
+    font-family: 'Hack';
+    font-size: 16px;
     font-weight: normal;
-    color: rgba(0,0,0,.54);
     margin: 0;
-}
-.article-card h2 {
 }
 
 .article-card a:link {
@@ -359,8 +274,8 @@ pre {
     margin-top: 25px;
     margin-bottom: 25px;
     padding: 15px;
-    color: #aaa;
-    background-color: #222;
+    color: #f45d22;
+    background: #222;
     white-space: pre;
     border-radius: 3px;
     border: 1px solid rgba(0,0,0,.09);
@@ -385,27 +300,25 @@ img.cover {
 }
 
 article a:link, #footer a:visited, #footer a:hover, #footer a:active {
-    color: #2c56dd;
-}
-
-article h1 {
-  padding-bottom: 20px;
-  line-height: 1.5em;
-}
-
-article p, article li, article th, article td {
-    font-size: 19px;
-    line-height: 1.8em;
+    color: #f45d22;
 }
 
 article h1, article h2, article h3, article h4, article h5, article h6 {
-    color: black;
-    font-family: 'Adamina';
+    color: #ffffff;
+    font-family: 'Hack';
+    font-weight: 700;
+}
+
+article h1 {
+    padding-bottom: 20px;
+    line-height: 1.5em;
 }
 
 article p, article li, article th, article td {
-    color: black;
-    font-family: 'Lora';
+    font-size: 16px;
+    line-height: 1.8em;
+    color: #ffffff;
+    font-family: 'Hack';
     font-weight: 400;
 }
 
@@ -494,7 +407,7 @@ article ul {
 /* Footer */
 
 footer {
-    padding: 2em 0;
+    padding: 3em 0;
     background: #fafafa;
 }
 
@@ -504,7 +417,7 @@ footer {
 }
 
 #footer p {
-    font-family: 'Open Sans';
+    font-family: 'Hack';
     color: #687a86;
     font-weight: 400;
     font-size: 0.75em;
@@ -517,7 +430,7 @@ footer {
 
 #footer a:link, #footer a:visited, #footer a:hover, #footer a:active {
     text-decoration: none;
-    color: #000;
+    color: #f45d22;
 }
 
 #header div.languages a:link {
@@ -548,6 +461,7 @@ footer {
     }
     #author-description {
         max-width: 90%;
+        color: #aaaaaa;
     }
     #disqus_thread {
         margin: auto;

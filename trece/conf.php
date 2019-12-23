@@ -8,7 +8,7 @@ return [
     "flavour"   =>  "mini",  # http://mini.trece.io/
     "version"   =>  "0.14.50",  # http://mini.trece.io/changelog
     "motto"     =>  "A humbler start", # In other words: "Nailing perfection" ;-)
-    "theme"     =>  $theme="brunneis",
+    "theme"     =>  $theme="term",
   ],
 
 
@@ -58,7 +58,7 @@ return [
     "langs"             =>  "es es-ES",  # Order matters. First language is the main language
                                          # Examples: en en-US|es es-ES|gal gl-ES|ar ar-MA rtl|zh zh-CN ttb
     "markdown"          =>  true,  # Use or not the Markdown syntax
-    "homepage"          =>  $homepage="brunneis_home",
+    "homepage"          =>  $homepage="home",
     "homepage_redirect" =>  "",
     "sections"          =>  [
                  "demo" =>  [

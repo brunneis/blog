@@ -1,5 +1,5 @@
 <?php
-  include 'brunneis_header.php';
+  include $conf["trece"]["theme"].'_header.php';
   include 'generate_latest_posts.php';
   include './trece/inc/blog/latest_posts.html';
 ?>

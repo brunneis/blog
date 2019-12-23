@@ -136,7 +136,7 @@
       <div id="author-description">
         <div id="author-avatar"><img src="/img/term/author.png" /></div>
         <h1>Rodrigo Martínez Castaño</h1>
-        <h2>Blockchain • Big Data • Information Retrieval</h2>
+        <h2>Blockchain - Big Data - Information Retrieval</h2>
         <p>
         Blockchain Architect and Co-founder of Blockchain.gal<br>
         Big Data & Information Retrieval PhD Student

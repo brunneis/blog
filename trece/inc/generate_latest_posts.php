@@ -64,7 +64,6 @@ foreach ($years as $year) {
       fwrite($latest_posts, '<a href="/blog/'.$year.'/'.$month.'/'.$post_name.'">');
       fwrite($latest_posts, '<h1>'.$meta['title'].'</h1>');
       fwrite($latest_posts, '<h2>'.$meta['description'].'</h2>');
-      fwrite($latest_posts, '<p>Leer más...</p>');
       fwrite($latest_posts, '</a>');
       fwrite($latest_posts, '</div>');
 
