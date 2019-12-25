@@ -95,7 +95,7 @@ header{
   position: fixed;
   top: 0;
   background: #161616;
-  box-shadow: 0 0px 6px 6px #00000024;
+  box-shadow: 0 0px 6px 6px #1c1c1c24;
   z-index: 1;
 }
 
@@ -147,10 +147,11 @@ header{
 #header aside.social-links {
   position: fixed;
   top: 0;
-  margin-top: 200px;
+  margin-top: 117px;
   padding-left: 6.5px;
   width: 35px;
   font-size: 22px;
+  text-align: center;
 }
 #header aside.social-links a:link,
 #header aside.social-links a:visited,
@@ -167,6 +168,7 @@ header{
     width: 100%;
     padding-bottom: 50px;
     background: #1c1c1c;
+    height: 330px;
 }
 
 #author-description {
@@ -178,7 +180,7 @@ header{
 }
 
 #author-description h1 {
-    font-size: 1.7em;
+    font-size: 22px;
     font-weight: bold;
     margin-right: 125px;
     color: #ffffff;
@@ -192,7 +194,7 @@ header{
 }
 
 #author-description p {
-    font-size: 1.1em;
+    font-size: 14px;
     margin-top: 1.5em;
     margin-right: 125px;
     color: #aaaaaa;
@@ -224,7 +226,6 @@ header{
     background: #1c1c1c;
     border-radius: 3px;
     border: 1px solid rgba(0,0,0,.09);
-    box-shadow: 0 1px 4px rgba(0,0,0,.04);
     line-height: 1.5em;
     color: #ffffff;
 }
