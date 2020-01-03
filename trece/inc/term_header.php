@@ -20,6 +20,16 @@
   <meta name="date" content="<?=$conf["meta"]["datetime"];?>" />
   <meta name="description" content="<?=$lCustom["og_description"][LANG];?>" />
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46298258-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-46298258-4');
+  </script>
+
 
   <!-- OG -->
   <meta property="fb:app_id" content="<?=$conf["contact"]["fb_app_id"];?>" />
