@@ -14,7 +14,7 @@ services:
     environment:
       - SITE_SCHEME=https
     volumes:
-      - ./blog:/var/www/html/trece/inc/blog
+      - ./data:/var/www/html/trece/inc/blog
     ports:
       - 10099:80
     logging: *default
