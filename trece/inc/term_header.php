@@ -68,9 +68,9 @@
   <link rel="icon" type="image/png" sizes="96x96" href="<?=REALPATH.$conf["dir"]["images"];?>favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="<?=REALPATH.$conf["dir"]["images"];?>favicon/favicon-16x16.png">
   <link rel="manifest" href="<?=REALPATH.$conf["dir"]["images"];?>favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#2c56dd">
+  <meta name="msapplication-TileColor" content="#f45d22">
   <meta name="msapplication-TileImage" content="<?=REALPATH.$conf["dir"]["images"];?>favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#2c56dd">
+  <meta name="theme-color" content="#f45d22">
 
   <!-- Font Awesome -->
   <link rel="stylesheet"
