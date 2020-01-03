@@ -14,7 +14,7 @@ Now that my *homelab* starts to be stable, I've decided to donate some of the re
 
 When you download software like Apache Httpd, Kafka, Spark, Netbeans, Maven, Tomcat, and a long *et cetera*, you are redirected to a random mirror in your country. In Spain, unlike in other countries, [there are only four mirrors in total](https://www.apache.org/mirrors/dist.html#es), [including mine](https://apache.brunneis.com/). Three of them in Galicia.
 
-I tend to package everything that can be reusable by others and even by me in the future in Docker containers, a widely known technology nowadays I won't talk about today.
+I tend to package everything that can be reusable by others, and even by me in the future, with Docker containers; a widely known technology nowadays I won't talk about today.
 
 In order to deploy your mirror, you need a web server and a synchronizing task, executed with **rsync**. The Docker container will retrieve changes from the source server twice a day. And that's it.
 
