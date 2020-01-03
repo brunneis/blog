@@ -300,7 +300,11 @@ img.cover {
     object-fit: cover;
 }
 
-article a:link, #footer a:visited, #footer a:hover, #footer a:active {
+article a:link, article a:visited, article a:hover, article a:active {
+    color: greenyellow;
+}
+
+#footer a:link, #footer a:visited, #footer a:hover, #footer a:active {
     color: #f45d22;
 }
 

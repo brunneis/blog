@@ -1,6 +1,6 @@
 <?php
 
-# Check when the list was generated
+// Check when the list was generated
 $mtime_filename = "./trece/inc/blog/.mtime";
 if (!is_file($mtime_filename)) {
     file_put_contents($mtime_filename, "");
@@ -8,10 +8,10 @@ if (!is_file($mtime_filename)) {
 $mtime = filemtime($mtime_filename);
 $elapsed_time = (time() - $mtime);
 if ( $elapsed_time < 3600 ) {
-    return;
+//    return;
 }
 
-# Generate list
+// Generate list
 file_put_contents($mtime_filename, "");
 $blog_path = './trece/inc/blog';
 $latest_posts_filename = $blog_path.'/latest_posts.html';
@@ -71,8 +71,8 @@ foreach ($years as $year) {
 
   }
   
-  # Only the last year
-  return;
+  // Only the last year
+  // return;
 
 }
 fwrite($latest_posts, '</div>');
