@@ -1,0 +1,21 @@
+version: '3.4'
+
+x-logging:
+  &default
+  options:
+    max-size: '50m'
+    max-file: '1'
+  driver: json-file
+
+services:
+  blog:
+    image: blog
+    container_name: blog
+    environment:
+      - SITE_SCHEME=https
+    volumes:
+      - ./blog:/var/www/html/trece/inc/blog
+    ports:
+      - 10099:80
+    logging: *default
+

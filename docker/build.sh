@@ -1,4 +1,5 @@
 #!/bin/bash
+source env.sh
 tar --dereference -c -f htdocs.tar \
     .htaccess \
     ../LICENSE \
@@ -7,5 +8,5 @@ tar --dereference -c -f htdocs.tar \
     ../trece \
     ../css \
     ../img
-docker build -t minitrece .
+docker build -t $DOCKER_IMAGE .
 rm htdocs.tar

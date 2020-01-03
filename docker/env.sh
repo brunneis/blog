@@ -1,5 +1,5 @@
 #!/bin/bash
 PORT=80
-DOCKER_IMAGE=minitrece
-CONTAINER_NAME=minitrece
+DOCKER_IMAGE=blog
+CONTAINER_NAME=blog
 SITE_SCHEME=http
