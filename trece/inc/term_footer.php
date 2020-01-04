@@ -18,7 +18,7 @@
   </div>
 
   <div id="footer">
-    <p>Copyright &copy; 2019 Rodrigo Martínez Castaño. Powered by <a href="https://minitrece.boa.gal/" target="blank_">miniTRECE</a>.
+    <p>Copyright &copy; 2019-<?php echo date("Y"); ?> Rodrigo Martínez Castaño. Powered by <a href="https://github.com/quenerapu/miniTRECE/">miniTRECE</a>.
   </div>
 </footer>
 
