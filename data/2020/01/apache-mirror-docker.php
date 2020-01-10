@@ -31,16 +31,16 @@ docker-compose up -d
 
 Done, your mirror should start the synchronization in the **./data** directory by default. Give it some time since there are several tens of GiBs of data.
 
-In order to make it useful, the mirror should be accessible publicly, so check the public IP of your server. The Apache server will be listening on the standard port (**80**).
+To make it useful, the mirror should be publicly accessible, so check the public IP of your server. The Apache server will be listening on the standard port (**80**).
 
 
-In my case, I run all my projects behind a reverse proxy, and with TLS (**https**). That means that the software I use as a proxy (**haproxy**) is listening on the standard HTTP ports (**80**, **443**). In order to run the mirror behind a reverse proxy, you have to change the exposed port in the host by editing the **docker-compose.yaml** file as shown below:
+In my case, I run all my projects behind a reverse proxy, and with TLS (**https**). That means that the software I use as a proxy (**haproxy**) is listening on the standard HTTP ports (**80**, **443**). To run the mirror behind a reverse proxy, you have to change the exposed port in the host by editing the **docker-compose.yaml** file as shown below:
 ```
     ports:
       - 10080:80
 ```
 
-Now, the web server will listen on the host's port **10080**. Just configure your reverse proxy to redirect the traffic for your mirror's domain to that port. In my case, this was **apache.brunneis.com**.
+Now, the webserver will listen on the host's port **10080**. Just configure your reverse proxy to redirect the traffic for your mirror's domain to that port. In my case, this was **apache.brunneis.com**.
 
 If you are interested in an easy way to deploy a reverse proxy with automatic requests of TLS certificates, [I recommend you the solution I've built](https://github.com/brunneis/https-reverse-proxy) where you just have to annotate which domains point to which IPs and ports in a simple YAML file.
 
